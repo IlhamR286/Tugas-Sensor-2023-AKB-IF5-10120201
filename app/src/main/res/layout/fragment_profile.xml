@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.belajarkuy.fragment.FragmentProfile">
+
+    <RelativeLayout
+        android:id="@+id/bg_header"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:background="@drawable/bg_header"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/fotodiri"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:contentDescription="fotodiri"
+            android:src="@drawable/fotodiri" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/nim"
+            android:layout_width="300dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="420dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/nim_string"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/nama_string"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/nim"/>
+
+        <TextView
+            android:id="@+id/kelas"
+            android:layout_width="300dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/nama"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/kelas_string"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="300dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/kelas"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/email_string"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>
